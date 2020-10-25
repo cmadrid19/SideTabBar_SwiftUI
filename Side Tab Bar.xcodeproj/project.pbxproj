@@ -11,6 +11,11 @@
 		9E1B5909254622D600F78F18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1B5908254622D600F78F18 /* ContentView.swift */; };
 		9E1B590B254622D900F78F18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E1B590A254622D900F78F18 /* Assets.xcassets */; };
 		9E1B590E254622D900F78F18 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E1B590D254622D900F78F18 /* Preview Assets.xcassets */; };
+		9E1B591B2546338C00F78F18 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1B591A2546338C00F78F18 /* Home.swift */; };
+		9E1B591E254633AA00F78F18 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1B591D254633AA00F78F18 /* ItemView.swift */; };
+		9E1B5921254633EF00F78F18 /* Curve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1B5920254633EF00F78F18 /* Curve.swift */; };
+		9E1B59242546340100F78F18 /* ItemCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1B59232546340100F78F18 /* ItemCurve.swift */; };
+		9E1B59272546341E00F78F18 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1B59262546341E00F78F18 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		9E1B590A254622D900F78F18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E1B590D254622D900F78F18 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9E1B590F254622D900F78F18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E1B591A2546338C00F78F18 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		9E1B591D254633AA00F78F18 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		9E1B5920254633EF00F78F18 /* Curve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curve.swift; sourceTree = "<group>"; };
+		9E1B59232546340100F78F18 /* ItemCurve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCurve.swift; sourceTree = "<group>"; };
+		9E1B59262546341E00F78F18 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +62,8 @@
 		9E1B5905254622D600F78F18 /* Side Tab Bar */ = {
 			isa = PBXGroup;
 			children = (
+				9E1B5917254622ED00F78F18 /* Model */,
+				9E1B5916254622E500F78F18 /* View */,
 				9E1B5906254622D600F78F18 /* Side_Tab_BarApp.swift */,
 				9E1B5908254622D600F78F18 /* ContentView.swift */,
 				9E1B590A254622D900F78F18 /* Assets.xcassets */,
@@ -67,6 +79,25 @@
 				9E1B590D254622D900F78F18 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9E1B5916254622E500F78F18 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9E1B591A2546338C00F78F18 /* Home.swift */,
+				9E1B591D254633AA00F78F18 /* ItemView.swift */,
+				9E1B5920254633EF00F78F18 /* Curve.swift */,
+				9E1B59232546340100F78F18 /* ItemCurve.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9E1B5917254622ED00F78F18 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9E1B59262546341E00F78F18 /* Item.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +169,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E1B5921254633EF00F78F18 /* Curve.swift in Sources */,
 				9E1B5909254622D600F78F18 /* ContentView.swift in Sources */,
+				9E1B591B2546338C00F78F18 /* Home.swift in Sources */,
 				9E1B5907254622D600F78F18 /* Side_Tab_BarApp.swift in Sources */,
+				9E1B59272546341E00F78F18 /* Item.swift in Sources */,
+				9E1B59242546340100F78F18 /* ItemCurve.swift in Sources */,
+				9E1B591E254633AA00F78F18 /* ItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +305,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Side Tab Bar/Preview Content\"";
+				DEVELOPMENT_TEAM = 4YGTHSUB42;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Side Tab Bar/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -290,6 +327,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Side Tab Bar/Preview Content\"";
+				DEVELOPMENT_TEAM = 4YGTHSUB42;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Side Tab Bar/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
